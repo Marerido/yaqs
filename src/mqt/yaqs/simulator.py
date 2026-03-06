@@ -73,7 +73,8 @@ else:
 # ---------------------------------------------------------------------------
 # 2) THIRD-PARTY IMPORTS
 # ---------------------------------------------------------------------------
-from qiskit.circuit import QuantumCircuit
+from mqt.qudits.quantum_circuit import QuantumCircuit
+#from qiskit.circuit import QuantumCircuit
 from qiskit.converters import circuit_to_dag
 from tqdm import tqdm
 
