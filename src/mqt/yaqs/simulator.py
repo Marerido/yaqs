@@ -747,7 +747,7 @@ def _run_circuit(
         parallel: Flag indicating whether to run trajectories in parallel.
     """
     # Sanity check: MPS length must equal circuit qubit count
-    assert initial_state.length == operator.num_qubits, "State and circuit qubit counts do not match."
+    assert initial_state.length == operator.num_qudits, "State and circuit qubit counts do not match."
     # Internal convention expects qubit order reversed (if applicable)
     operator = copy.deepcopy(operator.reverse_bits())
 
